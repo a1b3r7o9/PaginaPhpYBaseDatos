@@ -1,0 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    background-color: black;
+        overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+    z-index: 5;
+}
+/* Estilos base del formulario */
+.seccionForm {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d40b0b;
+    margin-top: 200px;
+}
+
+.cajaForm{
+    width: 30%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+.cajaForm h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.cajainput {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.cajainput input {
+    width: 70%;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.enviar {
+    width: 80%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(228, 3, 3);
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tituloOculto h3{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    width: 50%;
+    height: 100%;
+    padding-left: 25px;
+
+}
+
+.logo img{
+    height: 85%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 50%;
+    height: 100%;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: #E50914;
+}
+
+#seccionPrin{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/potada.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    height: 80vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+}
+
+.cartelera{
+    display: flex;
+    align-items:center;
+    width: 32%;
+    height: 44%;
+    background-color: rgb(238, 238, 238);
+    border-radius: 0px 20px 0 0;
+}
+
+.cartelera:hover{
+    opacity: 0.9;
+}
+.portada{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items:center;
+
+}
+
+.portada img{
+    height: 100%;
+}
+
+.descripcion{
+    width: 66%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: justify;
+    flex-direction: column;
+}
+
+.descripcion p{
+    padding: 20px;
+}
+
+.ver{
+    border: 1px solid #E50914;
+    width: 50%;
+    font-weight: bolder;
+    background-color: #E50914;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    border-radius: 5px;
+}
+
+.ver:hover{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    background-color: #E50914;
+    position: relative;
+    bottom: 0;
+}
+
+.pieIz{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+    height: 100%;
+}
+
+.pieIz a{
+    color: white;
+    padding: 25px;
+}
+
+.pieDer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+    height: 100%;
+}
+
+.pieDer h2{
+    color: white;
+    padding-left: 15px;
+}
+
+i{
+    padding-top: 5px;
+}
+
+#container-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  li div{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  #slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #slider li {
+    flex: 0 0 100%;
+    position: relative;
+  }
+  
+  #slider img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .title-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 16px;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrowPrev,
+  .arrowNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .arrowPrev {
+    left: 10px;
+  }
+  
+  .arrowNext {
+    right: 10px;
+  }
+  
+  .arrowPrev:hover,
+  .arrowNext:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+
+  @media screen and (max-width: 576px) {
+    #container-slider {
+      max-height: 50vh;
+    }
+  
+    #slider img {
+      max-height: 50vh;
+    }
+  
+    .title-container {
+      font-size: 14px;
+    }
+  
+    .arrowPrev,
+    .arrowNext {
+      font-size: 20px;
+      padding: 8px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .title-container {
+      font-size: 16px;
+      display: none;
+    }
+  
+    .arrowPrev,
+    .arrowNext {
+      font-size: 22px;
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .title-container {
+      font-size: 18px;
+    }
+  
+    .arrowPrev,
+    .arrowNext {
+      font-size: 24px;
+      padding: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .title-container {
+      font-size: 20px;
+    }
+  
+    .arrowPrev,
+    .arrowNext {
+      font-size: 26px;
+      padding: 14px;
+    }
+  }
+@media (max-width : 576px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+    .titulo h2{
+        font-size: 20px;
+    }.btnSlider{
+        color: #FFF;
+        font-size: 10pt;
+        font-family: 'arial';
+        letter-spacing: 1px;
+        padding: 10px 50px;
+        border: 1px solid #CCC;
+        background: rgba(37, 40, 80, 0.55);
+        border-radius: 31px;
+        text-decoration: none;
+        transition: .5s all;
+    }
+   
+    .imgSlider{
+        background-position: center;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .logo{
+        width: 80%;
+        height: 200px;
+    }
+
+    .logo img{
+        width: 50%;
+        height: 100%;
+    }
+    #seccionPrin{
+        background-color: black;
+    }
+    #seccion1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .cartelera{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .portada{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .portada img{
+        width: 100%;
+    }
+    
+    .descripcion h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .descripcion{
+        width: 100%;
+    }
+
+    .descripcion p{
+        display: none;
+    }
+
+    .ver{
+        margin-bottom: 20px;
+        width: 20%;
+    }
+    
+    .descripcion p{
+        padding: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+        
+    }
+
+}
+
+@media (max-width : 768px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        width: 100%;
+        height: 100%;
+    
+    }
+    .logo{
+        width: 80%;
+        height: 200px;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .logo img{
+        width: 100%;
+    }
+    #seccionPrin{
+        background-color: black;
+        margin-bottom: 50px;
+    }
+    #seccion1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+        margin-top: 50px;
+    }
+
+    .cartelera{
+        width: 100%;
+        height: 30%;
+       
+    }
+
+    .portada{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        justify-content: left;
+        align-items:center;
+    
+    }
+    
+    .portada img{
+        width: 100%;
+    }
+    
+    .descripcion{
+        width: 100%;
+    }
+    
+    .descripcion p{
+        padding: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+        
+    }
+}
+
+@media (max-width : 992px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }   
+    .logo{
+        width: 100%;
+        height: 200px;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    #seccionPrin{
+        background-color: black;
+        margin-bottom: 50px;
+    }
+    #seccion1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+        margin-top: 50px;
+    }
+
+    .cartelera{
+        width: 100%;
+        height: 30%;
+       
+    }
+
+    .portada{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        justify-content: left;
+        align-items:center;
+    
+    }
+    
+    .portada img{
+        width: 100%;
+    }
+    
+    .descripcion{
+        width: 100%;
+    }
+    
+    .descripcion p{
+        padding: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+        
+    }
+}
+
+@media (max-width : 1200px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+    .logo{
+        width: 50%;
+        height: 200px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .logo img{
+        width: 100%;
+    }
+    #seccionPrin{
+        background-color: black;
+        margin-bottom: 50px;
+    }
+    #seccion1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+        margin-top: 50px;
+    }
+
+    .cartelera{
+        width: 100%;
+        height: 30%;
+        margin-bottom: 10px;
+        border-radius: 0;
+    }
+
+    .portada{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: left;
+        align-items:center;
+    
+    }
+    
+    .portada img{
+        width: 100%;
+    }
+    
+    .descripcion{
+        width: 100%;
+    }
+    
+    .descripcion p{
+        padding: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+        
+    }
+}
